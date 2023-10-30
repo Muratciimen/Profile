@@ -13,6 +13,14 @@
 		387B488B2A7886C2003C0730 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 387B48892A7886C2003C0730 /* Main.storyboard */; };
 		387B488D2A7886C3003C0730 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 387B488C2A7886C3003C0730 /* Assets.xcassets */; };
 		387B48902A7886C3003C0730 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 387B488E2A7886C3003C0730 /* LaunchScreen.storyboard */; };
+		387B48982A788A34003C0730 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387B48972A788A34003C0730 /* RegisterViewController.swift */; };
+		388775AD2A7F0AF2008A5C99 /* ConnectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388775AC2A7F0AF2008A5C99 /* ConnectionViewController.swift */; };
+		388775B12A846154008A5C99 /* SwiftKeychainWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = 388775B02A846154008A5C99 /* SwiftKeychainWrapper */; };
+		388F13572ABBAB6D00B69D1B /* ScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388F13562ABBAB6D00B69D1B /* ScreenViewController.swift */; };
+		38AFBDE42AD23DFE00BEAE98 /* NewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38AFBDE32AD23DFE00BEAE98 /* NewsTableViewController.swift */; };
+		38AFBDE62AD23E2800BEAE98 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38AFBDE52AD23E2800BEAE98 /* NewsTableViewCell.swift */; };
+		38BCAFFB2A7B2049008649C2 /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BCAFFA2A7B2049008649C2 /* PasswordViewController.swift */; };
+		38BCAFFD2A7B2057008649C2 /* EmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BCAFFC2A7B2057008649C2 /* EmailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,13 @@
 		387B488C2A7886C3003C0730 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		387B488F2A7886C3003C0730 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		387B48912A7886C3003C0730 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		387B48972A788A34003C0730 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		388775AC2A7F0AF2008A5C99 /* ConnectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionViewController.swift; sourceTree = "<group>"; };
+		388F13562ABBAB6D00B69D1B /* ScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenViewController.swift; sourceTree = "<group>"; };
+		38AFBDE32AD23DFE00BEAE98 /* NewsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewController.swift; sourceTree = "<group>"; };
+		38AFBDE52AD23E2800BEAE98 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
+		38BCAFFA2A7B2049008649C2 /* PasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordViewController.swift; sourceTree = "<group>"; };
+		38BCAFFC2A7B2057008649C2 /* EmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				388775B12A846154008A5C99 /* SwiftKeychainWrapper in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +72,12 @@
 		387B48822A7886C2003C0730 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				38AFBDD82ACE670600BEAE98 /* News */,
+				388F13552ABBAB1800B69D1B /* Screen */,
+				388775AE2A7F0AFB008A5C99 /* Connection */,
+				38BCAFFF2A7B2064008649C2 /* Email */,
+				38BCAFFE2A7B205B008649C2 /* Password */,
+				38BCAFF82A7B1C7A008649C2 /* Register */,
 				387B48832A7886C2003C0730 /* AppDelegate.swift */,
 				387B48852A7886C2003C0730 /* SceneDelegate.swift */,
 				387B48872A7886C2003C0730 /* ViewController.swift */,
@@ -65,6 +87,55 @@
 				387B48912A7886C3003C0730 /* Info.plist */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		388775AE2A7F0AFB008A5C99 /* Connection */ = {
+			isa = PBXGroup;
+			children = (
+				388775AC2A7F0AF2008A5C99 /* ConnectionViewController.swift */,
+			);
+			path = Connection;
+			sourceTree = "<group>";
+		};
+		388F13552ABBAB1800B69D1B /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				388F13562ABBAB6D00B69D1B /* ScreenViewController.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		38AFBDD82ACE670600BEAE98 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				38AFBDE32AD23DFE00BEAE98 /* NewsTableViewController.swift */,
+				38AFBDE52AD23E2800BEAE98 /* NewsTableViewCell.swift */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		38BCAFF82A7B1C7A008649C2 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				387B48972A788A34003C0730 /* RegisterViewController.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		38BCAFFE2A7B205B008649C2 /* Password */ = {
+			isa = PBXGroup;
+			children = (
+				38BCAFFA2A7B2049008649C2 /* PasswordViewController.swift */,
+			);
+			path = Password;
+			sourceTree = "<group>";
+		};
+		38BCAFFF2A7B2064008649C2 /* Email */ = {
+			isa = PBXGroup;
+			children = (
+				38BCAFFC2A7B2057008649C2 /* EmailViewController.swift */,
+			);
+			path = Email;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +154,9 @@
 			dependencies = (
 			);
 			name = Profile;
+			packageProductDependencies = (
+				388775B02A846154008A5C99 /* SwiftKeychainWrapper */,
+			);
 			productName = Profile;
 			productReference = 387B48802A7886C2003C0730 /* Profile.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +185,9 @@
 				Base,
 			);
 			mainGroup = 387B48772A7886C2003C0730;
+			packageReferences = (
+				388775AF2A846154008A5C99 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */,
+			);
 			productRefGroup = 387B48812A7886C2003C0730 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,8 +216,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				387B48882A7886C2003C0730 /* ViewController.swift in Sources */,
+				388775AD2A7F0AF2008A5C99 /* ConnectionViewController.swift in Sources */,
+				38AFBDE62AD23E2800BEAE98 /* NewsTableViewCell.swift in Sources */,
+				38BCAFFD2A7B2057008649C2 /* EmailViewController.swift in Sources */,
+				38BCAFFB2A7B2049008649C2 /* PasswordViewController.swift in Sources */,
+				388F13572ABBAB6D00B69D1B /* ScreenViewController.swift in Sources */,
 				387B48842A7886C2003C0730 /* AppDelegate.swift in Sources */,
 				387B48862A7886C2003C0730 /* SceneDelegate.swift in Sources */,
+				387B48982A788A34003C0730 /* RegisterViewController.swift in Sources */,
+				38AFBDE42AD23DFE00BEAE98 /* NewsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +442,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		388775AF2A846154008A5C99 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jrendel/SwiftKeychainWrapper.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		388775B02A846154008A5C99 /* SwiftKeychainWrapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 388775AF2A846154008A5C99 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */;
+			productName = SwiftKeychainWrapper;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 387B48782A7886C2003C0730 /* Project object */;
 }
